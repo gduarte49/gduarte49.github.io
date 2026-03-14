@@ -1,24 +1,73 @@
 body {
+    font-size: 40px;
+    background-color: rgb(144, 243, 210);
+}
+
+.profile-container {
+    text-align: center;
+    padding: 40px;
+}
+
+.profile-pic {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* makes it a circle */
+    border: 5px solid #b06fc4;
+    /* purple border around photo */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    /* adds a soft shadow */
+}
+
+.my-name {
+    font-size: 5.5rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #b06fc4, #7b2ff7);
+    /* purple gradient */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* makes gradient show on text */
+    letter-spacing: 2px;
+    /* spaces out the letters */
+    margin-top: 15px;
+}
+
+.tagline {
+    font-size: 2.0rem;
+    color: #080808;
+    letter-spacing: 1px;
+}
+
+.centered {
     font-size: 18px;
     font-family: "Roboto", sans-serif;
     background: linear-gradient (to right, #191654, #43c6ac);
-    color: rgb(226, 92, 43);
+    color: rgb(8, 8, 8);
     min-height: 50%;
     text-align: left;
 }
 
 header {
     background-color: #1B998B;
-    color: white;
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-evenly;
     align-items: center
 }
 
-footer {
-    background-color: #cbf6e9;
+#welcome {
+    font-size: 40px;
+    font-weight: bold;
+    transition: color 0.5s ease;
+    text-align: center;
 }
 
+#name {
+    font-size: 40px;
+    font-weight: bold;
+    transition: color 0.5s ease;
+}
 
 
 
@@ -29,6 +78,6 @@ footer {
 
 .rounded-corners {
     border-radius: 15px;
-    padding: 20px;
-    width: 200px;
+    padding: 15px;
+    width: 300px;
 }
